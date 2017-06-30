@@ -20,7 +20,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_eul" />
+    <include layout="@layout/content_eula" />
 
 
 </android.support.design.widget.CoordinatorLayout>

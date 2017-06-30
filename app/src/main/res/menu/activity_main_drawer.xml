@@ -17,15 +17,11 @@
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
-            android:title="EULA" />
+            android:title="Settings" />
     </group>
 
     <item android:title="Useful Links">
         <menu>
-            <item
-                android:id="@+id/nav_eula"
-                android:icon="@drawable/ic_eula"
-                android:title="Website" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
@@ -39,6 +35,10 @@
                 android:id="@+id/nav_Logout"
                 android:icon="@drawable/ic_menu_profile"
                 android:title="Logout" />
+            <item
+                android:id="@+id/nav_eula"
+                android:icon="@drawable/ic_eula"
+                android:title="EULA" />
         </menu>
     </item>
 
