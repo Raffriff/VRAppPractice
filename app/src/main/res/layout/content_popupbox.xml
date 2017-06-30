@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.david.vrapppractice.popupbox"
+    tools:showIn="@layout/activity_popupbox">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView6"
+        tools:ignore="UselessParent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="181dp"
+                    android:layout_gravity="center_vertical"
+                    android:cropToPadding="true"
+                    android:src="@drawable/arrow_left"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="! Report !"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="45sp"
+                        tools:ignore="HardcodedText" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView52"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="This Issue to your"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="40sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/textView54"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="Inspector !"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textSize="36sp"
+                                android:textStyle="normal|bold"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:text="Understood"
+                    android:id="@+id/closebutton"
+                    android:background="@android:color/holo_green_light"
+                    android:layout_gravity="center"
+                    tools:ignore="HardcodedText"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
