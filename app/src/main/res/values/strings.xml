@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">VRAppPractice</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_page1">Page1</string>
+    <string name="title_activity_page2">Page2</string>
+    <string name="title_activity_page3">Page3</string>
+    <string name="title_activity_page4">Page4</string>
+    <string name="title_activity_page5">Page5</string>
+    <string name="title_activity_refer">Refer</string>
+    <string name="title_activity_page2a">Page2a</string>
+    <string name="title_activity_page2b">Page2b</string>
+    <string name="title_activity_page3a">Page3a</string>
+    <string name="title_activity_page3b">Page3b</string>
+    <string name="title_activity_page4a">Page4a</string>
+    <string name="title_activity_page5a">Page5a</string>
+    <string name="title_activity_page6">Page6</string>
+    <string name="title_activity_page6a">Page6a</string>
+    <string name="title_activity_page2c">Page2c</string>
+    <string name="title_activity_sheet">SheetA</string>
+    <string name="title_activity_continue1">Continue1</string>
+    <string name="title_activity_sheet_a1">SheetA1</string>
+    <string name="title_activity_plan7">Plan7</string>
+    <string name="title_activity_sheet_a2">SheetA2</string>
+    <string name="title_activity_sheet_a3">SheetA3</string>
+    <string name="title_activity_plan3">Plan3</string>
+    <string name="title_activity_plan5">Plan5</string>
+    <string name="title_activity_sheet_a4">SheetA4</string>
+    <string name="title_activity_website_new">WebsiteNew</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="busLanes">Bus Lanes?</string>
+    <string name="title_activity_landing_page">LandingPage</string>
+
+    <!--Nav bar-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_show_user">ShowUser</string>
+</resources>

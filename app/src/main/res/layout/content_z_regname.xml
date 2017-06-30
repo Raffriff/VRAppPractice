@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_z_regname"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.david.vrapppractice.zRegname"
+    tools:showIn="@layout/activity_z_regname">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/Step1of3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="top|center"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="5dp"
+                                        android:background="@color/colorAccent"></FrameLayout>
+
+                                    <TextView
+                                        android:id="@+id/Step_1_of_4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:paddingTop="10dp"
+                                        android:text="Step 1 of 3"
+                                        android:textAlignment="textStart"
+                                        android:textSize="20sp"
+                                        tools:ignore="HardcodedText,RtlHardcoded" />
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+
+                            <TextView
+                                android:id="@+id/User_Name_tital"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|top"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:text="User Name :"
+                                android:textSize="20sp"
+                                android:textStyle="normal|bold"
+                                tools:ignore="HardcodedText,RtlHardcoded" />
+
+                            <EditText
+                                android:id="@+id/etuser_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#ffffff"
+                                android:elevation="0dp"
+                                android:hint="Fill in Name here..."
+                                android:padding="25dp"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#b9c6c6c6"
+                                android:textSize="24sp"
+                                tools:ignore="HardcodedText" />
+
+                            <EditText
+                                android:id="@+id/etuser_access_level"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#ffffff"
+                                android:elevation="0dp"
+                                android:hint="Fill in Name here..."
+                                android:padding="25dp"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#b9c6c6c6"
+                                android:textSize="24sp"
+                                android:visibility="gone"
+                                tools:ignore="HardcodedText" />
+
+                            <EditText
+                                android:id="@+id/etuser_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#ffffff"
+                                android:elevation="0dp"
+                                android:hint="Fill in Name here..."
+                                android:padding="25dp"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#b9c6c6c6"
+                                android:textSize="24sp"
+                                android:visibility="gone"
+                                tools:ignore="HardcodedText" />
+
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    tools:ignore="DisableBaselineAlignment">
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <ImageButton
+                                            android:id="@+id/z_regnameleftarrow"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center|end"
+                                            android:background="@color/AppTrans"
+                                            android:paddingRight="25dp"
+                                            app:srcCompat="@drawable/arrow_left"
+                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry" />
+                                    </FrameLayout>
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:paddingLeft="25dp"
+                                        tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                        <ImageButton
+                                            android:id="@+id/z_regnamerightarrow"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center|start"
+                                            android:background="@color/AppTrans"
+                                            app:srcCompat="@drawable/arrow_right"
+                                            tools:ignore="ContentDescription" />
+                                    </FrameLayout>
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/Step2of3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="top|center"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="5dp"
+                                        android:background="@color/colorAccent"></FrameLayout>
+
+                                    <TextView
+                                        android:id="@+id/Step_1_of_4"
+                                        android:layout_width="239dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:paddingTop="10dp"
+                                        android:text="Step 2 of 3"
+                                        android:textAlignment="textStart"
+                                        android:textSize="20sp"
+                                        tools:ignore="HardcodedText,RtlHardcoded" />
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+
+                            <TextView
+                                android:id="@+id/User_Name_tital"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|top"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:text="Contact:"
+                                android:textSize="20sp"
+                                android:textStyle="normal|bold"
+                                tools:ignore="HardcodedText,RtlHardcoded" />
+
+                            <EditText
+                                android:id="@+id/etcontact"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#ffffff"
+                                android:elevation="0dp"
+                                android:hint="081 2345678"
+                                android:inputType="number"
+                                android:padding="25dp"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#b9c6c6c6"
+                                android:textSize="24sp"
+                                tools:ignore="HardcodedText" />
+
+                            <EditText
+                                android:id="@+id/etuser_access_level"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#ffffff"
+                                android:elevation="0dp"
+                                android:hint="Fill in Name here..."
+                                android:padding="25dp"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#b9c6c6c6"
+                                android:textSize="24sp"
+                                android:visibility="gone"
+                                tools:ignore="HardcodedText" />
+
+                            <EditText
+                                android:id="@+id/etuser_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#ffffff"
+                                android:elevation="0dp"
+                                android:hint="Fill in Name here..."
+                                android:padding="25dp"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#b9c6c6c6"
+                                android:textSize="24sp"
+                                android:visibility="gone"
+                                tools:ignore="HardcodedText" />
+
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    tools:ignore="DisableBaselineAlignment">
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <ImageButton
+                                            android:id="@+id/z_regnameleftarrow2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center|end"
+                                            android:background="@color/AppTrans"
+                                            android:paddingRight="25dp"
+                                            app:srcCompat="@drawable/arrow_left"
+                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry" />
+                                    </FrameLayout>
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:paddingLeft="25dp"
+                                        tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                        <ImageButton
+                                            android:id="@+id/z_regnamerightarrow2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center|start"
+                                            android:background="@color/AppTrans"
+                                            app:srcCompat="@drawable/arrow_right"
+                                            tools:ignore="ContentDescription" />
+                                    </FrameLayout>
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

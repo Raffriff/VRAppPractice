@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "254575462406",
+    "firebase_url": "https://vrappproper-59289.firebaseio.com",
+    "project_id": "vrappproper-59289",
+    "storage_bucket": "vrappproper-59289.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254575462406:android:10cf4bb62b9a48a9",
+        "android_client_info": {
+          "package_name": "com.example.david.vrapppractice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254575462406-aadn67o98c5i54d9q1dgejg29hmrq1pn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.david.vrapppractice",
+            "certificate_hash": "37b8b6841dc37afa1b4b5b00990e493442d74a76"
+          }
+        },
+        {
+          "client_id": "254575462406-hvqrg03dtikhen554th2jf78nrlijed3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9ugSSO3R1c4MpgvQvlQiTw30CAdK7z8c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254575462406-hvqrg03dtikhen554th2jf78nrlijed3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

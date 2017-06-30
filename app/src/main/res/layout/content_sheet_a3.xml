@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.david.vrapppractice.SheetA3"
+    tools:showIn="@layout/activity_sheet_a3">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:text="Traffic Volume?"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:text="Minor Traffic: Extremely low traffic volumes. Typically no more than one moving vehicle visible within 300m of the site, and generally no HGV, bus traffic, or traffic signals.\nMajor Traffic: Any other traffic volume."
+            android:textSize="18sp"
+            android:layout_below="@+id/textView33"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If in doubt, if there are more than 30 vehicles passing in 3 minutes, it is Major Traffic."
+            android:textSize="18sp"
+            android:layout_below="@+id/textView35"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="37dp" />
+
+        <Button
+            android:id="@+id/Minor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:text="Minor Traffic"
+            android:layout_below="@+id/textView37"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp" />
+
+        <Button
+            android:id="@+id/Major1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23dp"
+            android:text="Major Traffic"
+            android:layout_alignBaseline="@+id/Minor1"
+            android:layout_alignBottom="@+id/Minor1"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

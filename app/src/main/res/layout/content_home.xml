@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.david.vrapppractice.Home"
+    tools:showIn="@layout/activity_home">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/sheet0_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="50dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/rounded_blue"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView38"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/textView10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_above="@+id/textView11"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="47dp"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Roadworks Exclusion"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffff00"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold"
+                                    android:typeface="normal"
+                                    tools:text="Roadworks Exclusion" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_above="@+id/No2"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="53dp"
+                                    android:layout_weight="0.05"
+                                    android:text="Is job site on a duel carriageway? \nIs speed limit higher than 60km?\nIs job site at a roundabout?\nIs job site at a bus/Railway Line?"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/Yes1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignTop="@+id/No2"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="Yes"
+                                    android:textColor="#ffffff" />
+
+                                <Button
+                                    android:id="@+id/No1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginBottom="157dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="No"
+                                    android:textColor="#ffffff" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/sheet0_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView38"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_above="@+id/No2"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="53dp"
+                                    android:layout_weight="0.05"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="Is it possible to complete"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/textView10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_above="@+id/textView11"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="47dp"
+                                    android:background="@drawable/rounded_blue"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Immediate or Quick\nReinstement?"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffff00"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold"
+                                    android:typeface="normal" />
+
+                                <TextView
+                                    android:id="@+id/textView41"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="47dp"
+                                    android:background="@drawable/rounded_blue"
+                                    android:fontFamily="sans-serif"
+                                    android:text="of the job site?"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp"
+                                    android:typeface="normal" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/Yes2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignTop="@+id/No2"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="Yes"
+                                    android:textColor="#ffffff" />
+
+                                <Button
+                                    android:id="@+id/No2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginBottom="157dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="No"
+                                    android:textColor="#ffffff" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/sheet0_2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView38"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_above="@+id/No2"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="53dp"
+                                    android:layout_weight="0.05"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="Is the job MINOR ROADWAY WORKS\nduring periods of low risk?"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/Yes2_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignTop="@+id/No2"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="Yes"
+                                    android:textColor="#ffffff" />
+
+                                <Button
+                                    android:id="@+id/No2_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginBottom="157dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="No"
+                                    android:textColor="#ffffff" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/sheet0_2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView38"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_above="@+id/No2"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="53dp"
+                                    android:layout_weight="0.05"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="Is the job site at Traffic Lights with\nan ALL-STOP phase?"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/Yes2_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignTop="@+id/No2"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="Yes"
+                                    android:textColor="#ffffff" />
+
+                                <Button
+                                    android:id="@+id/No2_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginBottom="157dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="No"
+                                    android:textColor="#ffffff" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/sheet0_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView38"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/textView42"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_above="@+id/No2"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="53dp"
+                                    android:layout_weight="0.05"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="Is job site on"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/textView10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_above="@+id/textView11"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="47dp"
+                                    android:background="@drawable/rounded_blue"
+                                    android:fontFamily="sans-serif"
+                                    android:text="2-Lane Straight Road"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffff00"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold"
+                                    android:typeface="normal" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_above="@+id/No2"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="53dp"
+                                    android:layout_weight="0.05"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="i.e not at a junction?"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/Yes3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignTop="@+id/No2"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="Yes"
+                                    android:textColor="#ffffff" />
+
+                                <Button
+                                    android:id="@+id/No3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginBottom="157dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="No"
+                                    android:textColor="#ffffff" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/sheet0_3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView38"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_above="@+id/No2"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="53dp"
+                                    android:layout_weight="0.05"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="job site is on Footpath"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                                <Button
+                                    android:id="@+id/Yes3_1_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignTop="@+id/No2"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="Yes"
+                                    android:textColor="#ffffff" />
+
+                                <TextView
+                                    android:id="@+id/textView44"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/textView43"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_above="@+id/No2"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="53dp"
+                                    android:layout_weight="0.05"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="job site is on Roadway"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                                <Button
+                                    android:id="@+id/Yes3_1_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginBottom="157dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="No"
+                                    android:textColor="#ffffff" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/sheet0_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView38"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_above="@+id/No2"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="53dp"
+                                    android:layout_weight="0.05"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="Is job site on 2-Lane Road\nat a"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/textView10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_above="@+id/textView11"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="47dp"
+                                    android:background="@drawable/rounded_blue"
+                                    android:fontFamily="sans-serif"
+                                    android:text="T-Junction?"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffff00"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold"
+                                    android:typeface="normal"
+                                    tools:text="T-Junction?" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/Yes4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignTop="@+id/No2"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="Yes"
+                                    android:textColor="#ffffff" />
+
+                                <Button
+                                    android:id="@+id/No4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginBottom="157dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="No"
+                                    android:textColor="#ffffff"
+                                    tools:ignore="TooManyViews" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/sheet0_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView38"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_above="@+id/No2"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="53dp"
+                                    android:layout_weight="0.05"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="Is job site on a 2-Lane Road\n at a"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/textView10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_above="@+id/textView11"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="47dp"
+                                    android:background="@drawable/rounded_blue"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Crossroad Junction?"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffff00"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold"
+                                    android:typeface="normal" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/Yes5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignTop="@+id/No2"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="Yes"
+                                    android:textColor="#ffffff" />
+
+                                <Button
+                                    android:id="@+id/No5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginBottom="157dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="No"
+                                    android:textColor="#ffffff" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/sheet0_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView38"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_above="@+id/No2"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="53dp"
+                                    android:layout_weight="0.05"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="Is job site on a road with"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/textView10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_above="@+id/textView11"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="47dp"
+                                    android:background="@drawable/rounded_blue"
+                                    android:fontFamily="sans-serif"
+                                    android:text="@string/busLanes"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffff00"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold"
+                                    android:typeface="normal" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/Yes6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignTop="@+id/No2"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="Yes"
+                                    android:textColor="#ffffff" />
+
+                                <Button
+                                    android:id="@+id/No6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginBottom="157dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rounded_blue"
+                                    android:text="No"
+                                    android:textColor="#ffffff" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

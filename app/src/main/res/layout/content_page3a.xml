@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.david.vrapppractice.Page3a"
+    tools:showIn="@layout/activity_page3a">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Yes6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp"
+            android:text="is job site only on footpath?"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/Yes6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_marginBottom="213dp"
+            android:layout_marginStart="22dp"
+            android:text="Yes" />
+
+        <Button
+            android:id="@+id/No6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView12"
+            android:layout_alignTop="@+id/Yes6"
+            android:layout_marginEnd="24dp"
+            android:text="No" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
