@@ -33,10 +33,6 @@
             android:label="@string/title_activity_refer"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Page2a"
-            android:label="@string/title_activity_page2a"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Page2b"
             android:label="@string/title_activity_page2b"
             android:theme="@style/AppTheme.NoActionBar" />
