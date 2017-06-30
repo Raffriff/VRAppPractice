@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.FrameLayout;
 
-public class Home extends AppCompatActivity {
+public class Sheet0 extends AppCompatActivity {
 
     ///////////////Button Variables//////////////
     Button Yes1;
@@ -38,7 +38,7 @@ public class Home extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_sheet0);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -89,7 +89,7 @@ public class Home extends AppCompatActivity {
         Yes1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Home.this, Refer.class));
+                startActivity(new Intent(Sheet0.this, Refer.class));
             }
         });
 
@@ -224,7 +224,7 @@ public class Home extends AppCompatActivity {
         No6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Home.this, Refer.class));
+                startActivity(new Intent(Sheet0.this, Refer.class));
             }
         });
 
@@ -248,7 +248,7 @@ public class Home extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
+        // automatically handle clicks on the activity_sheet0/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 

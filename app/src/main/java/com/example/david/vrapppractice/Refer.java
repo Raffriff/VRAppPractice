@@ -2,8 +2,6 @@ package com.example.david.vrapppractice;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -28,7 +26,7 @@ public class Refer extends AppCompatActivity {
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Refer.this, Home.class));
+                startActivity(new Intent(Refer.this, Sheet0.class));
             }
         });
     }

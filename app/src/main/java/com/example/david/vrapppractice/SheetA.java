@@ -27,7 +27,7 @@ public class SheetA extends AppCompatActivity {
         No13 = (Button) findViewById(R.id.No13);
 
         ///////////////Button Events/////////////////
-        Yes13.setOnClickListener(new View.OnClickListener() {
+        /*Yes13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SheetA.this, SheetA1.class));
@@ -39,7 +39,7 @@ public class SheetA extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(SheetA.this, Plan7.class));
             }
-        });
+        });*/
     }
 
 }

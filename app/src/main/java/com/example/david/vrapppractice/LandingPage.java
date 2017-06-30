@@ -2,9 +2,7 @@ package com.example.david.vrapppractice;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -77,7 +75,7 @@ public class LandingPage extends AppCompatActivity implements NavigationView.OnN
         tManageSelect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LandingPage.this, Home.class));
+                startActivity(new Intent(LandingPage.this, Sheet0.class));
             }
         });
 
@@ -116,7 +114,7 @@ public class LandingPage extends AppCompatActivity implements NavigationView.OnN
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
+        // automatically handle clicks on the activity_sheet0/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
@@ -135,11 +133,11 @@ public class LandingPage extends AppCompatActivity implements NavigationView.OnN
         int id = item.getItemId();
 
         if (id == R.id.nav_profile) {
-            startActivity(new Intent(LandingPage.this, ShowUser.class));
+            startActivity(new Intent(LandingPage.this, User_Profile.class));
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
-            startActivity(new Intent(LandingPage.this, Home.class));
+            startActivity(new Intent(LandingPage.this, Sheet0.class));
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_eula) {

@@ -2,9 +2,6 @@ package com.example.david.vrapppractice;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -16,7 +13,7 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class ShowUser extends AppCompatActivity {
+public class User_Profile extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
     private Firebase mRootRef;
@@ -28,7 +25,7 @@ public class ShowUser extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_show_user);
+        setContentView(R.layout.activity_user_profile);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -61,7 +58,7 @@ public class ShowUser extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ShowUser.this, LandingPage.class));
+                startActivity(new Intent(User_Profile.this, LandingPage.class));
             }
         });
 
