@@ -142,7 +142,11 @@ public class LandingPage extends AppCompatActivity implements NavigationView.OnN
             startActivity(new Intent(LandingPage.this, Home.class));
         } else if (id == R.id.nav_manage) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_eula) {
+
+            startActivity(new Intent(LandingPage.this, EULA.class));
+            Toast.makeText(this, "EULA Page", Toast.LENGTH_SHORT).show();
+
 
         } else if (id == R.id.nav_send) {
 

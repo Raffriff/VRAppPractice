@@ -147,7 +147,11 @@
         <activity
             android:name=".ShowUser"
             android:label="User"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EULA"
+            android:label="@string/title_activity_eul"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

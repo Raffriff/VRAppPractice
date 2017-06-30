@@ -23,8 +23,8 @@
     <item android:title="Useful Links">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
+                android:id="@+id/nav_eula"
+                android:icon="@drawable/ic_eula"
                 android:title="Website" />
             <item
                 android:id="@+id/nav_send"
