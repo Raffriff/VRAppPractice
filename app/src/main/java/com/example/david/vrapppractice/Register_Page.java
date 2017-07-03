@@ -13,10 +13,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class Register_Page extends AppCompatActivity implements View.OnClickListener{
 
@@ -25,8 +30,11 @@ public class Register_Page extends AppCompatActivity implements View.OnClickList
     private Button bRegister;
     private TextView Loginherelink;
 
+    int userCount;
+
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
+    private Firebase mRootRef;
 
 
     @Override
@@ -36,6 +44,7 @@ public class Register_Page extends AppCompatActivity implements View.OnClickList
 
         progressDialog = new ProgressDialog(this);
         firebaseAuth = FirebaseAuth.getInstance();
+        mRootRef = new Firebase("https://vrappproper-59289.firebaseio.com/");
 
 
         if (firebaseAuth.getCurrentUser() != null) {
@@ -51,20 +60,21 @@ public class Register_Page extends AppCompatActivity implements View.OnClickList
 
         bRegister.setOnClickListener(this);
         Loginherelink.setOnClickListener(this);
+
     }
 
-    private void registerUser(){
+    private void registerUser() {
         String Email = Regemail.getText().toString().trim();
         String Password = RegPassword.getText().toString().trim();
 
-        if(TextUtils.isEmpty(Email)) {
+        if (TextUtils.isEmpty(Email)) {
             //email is empty
             Toast.makeText(this, "Please enter Email", Toast.LENGTH_SHORT).show();
             //stopping the function execution further
             return;
         }
 
-        if(TextUtils.isEmpty(Password)) {
+        if (TextUtils.isEmpty(Password)) {
             //email is empty
             Toast.makeText(this, "Please enter Password", Toast.LENGTH_SHORT).show();
             //stopping the function execution further
@@ -76,19 +86,35 @@ public class Register_Page extends AppCompatActivity implements View.OnClickList
         progressDialog.setMessage("Registering user...");
         progressDialog.show();
 
-        firebaseAuth.createUserWithEmailAndPassword(Email,Password)
+        firebaseAuth.createUserWithEmailAndPassword(Email, Password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             //user is successfully registered and loggin in
                             finish();
-                            startActivity(new Intent(getApplicationContext(),zRegname.class));
+                            startActivity(new Intent(getApplicationContext(), zRegname.class));
                             //we will start the profile activit here
                             //right now lets display a toast only
                             Toast.makeText(Register_Page.this, "Registration Successfull", Toast.LENGTH_SHORT).show();
 
-                        } else {
+                            ////////////////Total User Counter/////////////////
+                            mRootRef.child("users").addListenerForSingleValueEvent(new com.firebase.client.ValueEventListener() {
+                                @Override
+                                public void onDataChange(com.firebase.client.DataSnapshot dataSnapshot) {
+                                    int userCount = dataSnapshot.child("User Count").getValue(int.class);
+                                    int userCounted = userCounter(userCount);
+                                    Firebase childRef = mRootRef.child("users").child("User Count");
+                                    childRef.setValue(userCounted);
+                                }
+
+                                @Override
+                                public void onCancelled(FirebaseError firebaseError) {
+
+                                }
+                            });
+
+                        }else {
 
                             Toast.makeText(Register_Page.this, "Registered Failed, Please try again", Toast.LENGTH_SHORT).show();
                         }
@@ -96,8 +122,8 @@ public class Register_Page extends AppCompatActivity implements View.OnClickList
                     }
                 });
 
+        }
 
-    }
 
     @Override
     public void onClick(View view) {
@@ -108,5 +134,11 @@ public class Register_Page extends AppCompatActivity implements View.OnClickList
             startActivity(new Intent(this, Login_Page.class));
             //will open Login activity
         }
+    }
+
+    public int userCounter(int userCount){
+
+        userCount++;
+        return userCount;
     }
 }
