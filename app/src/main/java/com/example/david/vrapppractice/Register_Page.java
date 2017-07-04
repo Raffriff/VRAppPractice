@@ -114,6 +114,21 @@ public class Register_Page extends AppCompatActivity implements View.OnClickList
                                 }
                             });
 
+                            mRootRef.child("users").addListenerForSingleValueEvent(new com.firebase.client.ValueEventListener() {
+                                @Override
+                                public void onDataChange(com.firebase.client.DataSnapshot dataSnapshot) {
+                                    int loginCount = dataSnapshot.child("Login Count").getValue(int.class);
+                                    int loginCounted = loginCounter(loginCount);
+                                    Firebase childRef = mRootRef.child("users").child("Login Count");
+                                    childRef.setValue(loginCounted);
+                                }
+
+                                @Override
+                                public void onCancelled(FirebaseError firebaseError) {
+
+                                }
+                            });
+
                         }else {
 
                             Toast.makeText(Register_Page.this, "Registered Failed, Please try again", Toast.LENGTH_SHORT).show();
@@ -140,5 +155,11 @@ public class Register_Page extends AppCompatActivity implements View.OnClickList
 
         userCount++;
         return userCount;
+    }
+
+    public int loginCounter(int loginCount){
+
+        loginCount++;
+        return loginCount;
     }
 }

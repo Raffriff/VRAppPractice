@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -30,6 +32,7 @@ public class Login_Page extends AppCompatActivity implements View.OnClickListene
     private TextView regherelink;
 
     private FirebaseAuth firebaseAuth;
+    private Firebase mRootRef;
     private DatabaseReference databaseReference;
     private ProgressDialog progressDialog;
 
@@ -39,6 +42,7 @@ public class Login_Page extends AppCompatActivity implements View.OnClickListene
         setContentView(R.layout.activity_login__page);
 
         firebaseAuth = FirebaseAuth.getInstance();
+        mRootRef = new Firebase("https://vrappproper-59289.firebaseio.com/");
         databaseReference = FirebaseDatabase.getInstance().getReference();
 
         if (firebaseAuth.getCurrentUser() != null) {
@@ -96,8 +100,20 @@ public class Login_Page extends AppCompatActivity implements View.OnClickListene
                             finish();
                             startActivity(new Intent(getApplicationContext(),LandingPage.class));
 
+                            mRootRef.child("users").addListenerForSingleValueEvent(new com.firebase.client.ValueEventListener() {
+                                @Override
+                                public void onDataChange(com.firebase.client.DataSnapshot dataSnapshot) {
+                                    int loginCount = dataSnapshot.child("Login Count").getValue(int.class);
+                                    int loginCounted = loginCounter(loginCount);
+                                    Firebase childRef = mRootRef.child("users").child("Login Count");
+                                    childRef.setValue(loginCounted);
+                                }
 
+                                @Override
+                                public void onCancelled(FirebaseError firebaseError) {
 
+                                }
+                            });
                         }
                     }
                 });
@@ -113,5 +129,11 @@ public class Login_Page extends AppCompatActivity implements View.OnClickListene
             finish();
             startActivity(new Intent(this, Register_Page.class));
         }
+    }
+
+    public int loginCounter(int loginCount){
+
+        loginCount++;
+        return loginCount;
     }
 }
