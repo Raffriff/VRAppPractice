@@ -30,7 +30,7 @@
                     android:id="@+id/user_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="User Name: @String/user_name"
+                    android:text="User Name:"
                     android:textSize="24sp" />
 
                 <TextView

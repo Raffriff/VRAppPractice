@@ -1,5 +1,6 @@
 package com.example.david.vrapppractice;
 
+import android.animation.ObjectAnimator;
 import android.app.FragmentManager;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -17,7 +18,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,6 +39,7 @@ public class LandingPage extends AppCompatActivity implements NavigationView.OnN
 
     private static final int PERMISSION_REQUEST_CODE = 1;
 
+    ProgressBar mprogressBar;
 
     private FirebaseAuth firebaseAuth;
     private Firebase mRootRef;
@@ -43,6 +47,9 @@ public class LandingPage extends AppCompatActivity implements NavigationView.OnN
 
     private TextView user_name;
     private TextView Database_Synctime;
+    private TextView userCount;
+    int totalUsers;
+    String tUsers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +72,32 @@ public class LandingPage extends AppCompatActivity implements NavigationView.OnN
                 user_name.setText(userName);
 
                 Database_Synctime.setText(Database_Synced);
+
+            }
+
+            @Override
+            public void onCancelled(FirebaseError firebaseError) {
+
+            }
+        });
+
+        mRootRef.child("users").addListenerForSingleValueEvent(new com.firebase.client.ValueEventListener() {
+            @Override
+            public void onDataChange(com.firebase.client.DataSnapshot dataSnapshot) {
+
+                ////////////Progress bar animtion (Total Users)//////////////
+                totalUsers = dataSnapshot.child("User Count").getValue(int.class);
+                tUsers = Integer.toString(totalUsers);
+                totalUsers = totalUsers/2;
+                mprogressBar = (ProgressBar) findViewById(R.id.progressBar2);
+                ObjectAnimator anim = ObjectAnimator.ofInt(mprogressBar, "Progress", 1, totalUsers);
+                anim.setDuration(1500);
+                anim.setInterpolator(new DecelerateInterpolator());
+                anim.start();
+
+                userCount = (TextView) findViewById(R.id.User_Count);
+                userCount.setText("Total Users: " + tUsers);
+
             }
 
             @Override
