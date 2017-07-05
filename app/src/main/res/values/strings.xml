@@ -36,4 +36,5 @@
     <string name="title_activity_show_user">ShowUser</string>
     <string name="title_activity_eul">EULA</string>
     <string name="title_activity_popupbox">popupbox</string>
+    <string name="title_activity_forms_list">FormsList</string>
 </resources>

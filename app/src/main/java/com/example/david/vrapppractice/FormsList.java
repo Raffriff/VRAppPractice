@@ -34,20 +34,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 
-public class LandingPage extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-
-
-    private static final int PERMISSION_REQUEST_CODE = 1;
+public class FormsList extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     ProgressBar mprogressBar;
 
     private FirebaseAuth firebaseAuth;
     private Firebase mRootRef;
     Button tManageSelect;
-    Button formsView;
-
-    private TextView user_name;
-    private TextView Database_Synctime;
     private TextView userCount;
     int totalUsers;
     String tUsers;
@@ -62,25 +55,6 @@ public class LandingPage extends AppCompatActivity implements NavigationView.OnN
         Firebase.setAndroidContext(this);
         mRootRef = new Firebase("https://vrappproper-59289.firebaseio.com/");
         firebaseAuth = FirebaseAuth.getInstance();
-
-        mRootRef.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Profile").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(com.firebase.client.DataSnapshot dataSnapshot) {
-
-                String userName = dataSnapshot.child("User Name").getValue(String.class);
-                String Database_Synced = dataSnapshot.child("Time User last connected").getValue(String.class);
-
-                user_name.setText(userName);
-
-                Database_Synctime.setText(Database_Synced);
-
-            }
-
-            @Override
-            public void onCancelled(FirebaseError firebaseError) {
-
-            }
-        });
 
         mRootRef.child("users").addListenerForSingleValueEvent(new com.firebase.client.ValueEventListener() {
             @Override
@@ -107,47 +81,15 @@ public class LandingPage extends AppCompatActivity implements NavigationView.OnN
             }
         });
 
-        if(Build.VERSION.SDK_INT > 5.0){
-
-            ArrayList<String> permissions = new ArrayList<String>();
-
-            boolean result = checkPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE);
-            if (result == false) {
-
-                permissions.add(android.Manifest.permission.WRITE_EXTERNAL_STORAGE);
-            }
-
-            result = checkPermission(android.Manifest.permission.CAMERA);
-            if (result == false) {
-
-                permissions.add(android.Manifest.permission.CAMERA);
-            }
-
-            result = checkPermission(android.Manifest.permission.ACCESS_FINE_LOCATION);
-            if (result == false) {
-
-                permissions.add(android.Manifest.permission.ACCESS_FINE_LOCATION);
-            }
-
-            if (permissions.size() > 0) {
-
-                Object[] objectList = permissions.toArray();
-                String[] permissionStrings = Arrays.copyOf(objectList, objectList.length, String[].class);
-                ActivityCompat.requestPermissions(this, permissionStrings, PERMISSION_REQUEST_CODE);
-            }
-        }
-
         Date date = new Date();
         String currentDateandTime = DateFormat.getDateTimeInstance().format(date);
 
         Firebase childRef = mRootRef.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Profile").child("Time User last connected");
         childRef.setValue(currentDateandTime);
 
-        user_name = (TextView) findViewById(R.id.user_name);
-        Database_Synctime = (TextView) findViewById(R.id.Database_Synctime);
+
 
         tManageSelect = (Button) findViewById(R.id.tManageSelect);
-        formsView = (Button) findViewById(R.id.FormsList);
 
         tManageSelect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -156,13 +98,6 @@ public class LandingPage extends AppCompatActivity implements NavigationView.OnN
                 popupbox dialogFragment2 = popupbox.newInstance("WarningBoxRAWorkingatheights");
                 dialogFragment2.show(fm, "Sample Fragment");
                 //startActivity(new Intent(LandingPage.this, Sheet0.class));
-            }
-        });
-
-        formsView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LandingPage.this, FormsList.class));
             }
         });
 
@@ -220,16 +155,16 @@ public class LandingPage extends AppCompatActivity implements NavigationView.OnN
         int id = item.getItemId();
 
         if (id == R.id.nav_profile) {
-            startActivity(new Intent(LandingPage.this, User_Profile.class));
+            startActivity(new Intent(FormsList.this, User_Profile.class));
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
-            startActivity(new Intent(LandingPage.this, Sheet0.class));
+            startActivity(new Intent(FormsList.this, Sheet0.class));
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_eula) {
 
-            startActivity(new Intent(LandingPage.this, EULA.class));
+            startActivity(new Intent(FormsList.this, EULA.class));
             Toast.makeText(this, "EULA Page", Toast.LENGTH_SHORT).show();
 
 
@@ -237,7 +172,7 @@ public class LandingPage extends AppCompatActivity implements NavigationView.OnN
 
         } else if (id == R.id.nav_Logout) {
             firebaseAuth.signOut();
-            startActivity(new Intent(LandingPage.this, DCC_Login_or_Reg.class));
+            startActivity(new Intent(FormsList.this, DCC_Login_or_Reg.class));
             Toast.makeText(this, "Logged Out", Toast.LENGTH_SHORT).show();
             finish();
         }
@@ -247,86 +182,4 @@ public class LandingPage extends AppCompatActivity implements NavigationView.OnN
         return true;
     }
 
-    private boolean checkPermission(String permission) {
-        int result = ContextCompat.checkSelfPermission(this, permission);
-        if (result == PackageManager.PERMISSION_GRANTED) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-        switch (requestCode) {
-            case PERMISSION_REQUEST_CODE:
-                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    Log.e("value", "Permission Granted, Now you can use local drive .");
-                } else {
-                    Log.e("value", "Permission Denied, You cannot use local drive .");
-                }
-                break;
-        }
-
-    }
-
-
 }
-
-////////////Permissions Check/////////
-
-/*
-
-private static final int PERMISSION_REQUEST_CODE = 1;
-
-        if(Build.VERSION.SDK_INT > 5.0){
-
-                    ArrayList<String> permissions = new ArrayList<String>();
-
-                    boolean result = checkPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE);
-                    if (result == false) {
-
-                        permissions.add(android.Manifest.permission.WRITE_EXTERNAL_STORAGE);
-                    }
-
-                    result = checkPermission(android.Manifest.permission.CAMERA);
-                    if (result == false) {
-
-                        permissions.add(android.Manifest.permission.CAMERA);
-                    }
-
-                    result = checkPermission(android.Manifest.permission.ACCESS_FINE_LOCATION);
-                    if (result == false) {
-
-                        permissions.add(android.Manifest.permission.ACCESS_FINE_LOCATION);
-                    }
-
-                    if (permissions.size() > 0) {
-
-                        Object[] objectList = permissions.toArray();
-                        String[] permissionStrings = Arrays.copyOf(objectList, objectList.length, String[].class);
-                        ActivityCompat.requestPermissions(this, permissionStrings, PERMISSION_REQUEST_CODE);
-                    }
-                }
-        private boolean checkPermission(String permission) {
-                int result = ContextCompat.checkSelfPermission(this, permission);
-                if (result == PackageManager.PERMISSION_GRANTED) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
-                 @Override
-            public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-                switch (requestCode) {
-                    case PERMISSION_REQUEST_CODE:
-                        if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                            Log.e("value", "Permission Granted, Now you can use local drive .");
-                        } else {
-                            Log.e("value", "Permission Denied, You cannot use local drive .");
-                        }
-                        break;
-                }
-            }
-
- */
