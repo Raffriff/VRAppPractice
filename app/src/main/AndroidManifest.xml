@@ -76,6 +76,10 @@
         <activity
             android:name=".FormsList"
             android:label="@string/title_activity_forms_list"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TMPSelection_001"
+            android:label="@string/title_activity_tmpselection_001"
             android:theme="@style/AppTheme"></activity>
     </application>
 

@@ -43,7 +43,7 @@ public class LandingPage extends AppCompatActivity implements NavigationView.OnN
 
     private FirebaseAuth firebaseAuth;
     private Firebase mRootRef;
-    Button tManageSelect;
+    Button tManageSelect,drawingselection;
     Button formsView;
 
     private TextView user_name;
@@ -147,22 +147,27 @@ public class LandingPage extends AppCompatActivity implements NavigationView.OnN
         Database_Synctime = (TextView) findViewById(R.id.Database_Synctime);
 
         tManageSelect = (Button) findViewById(R.id.tManageSelect);
+        drawingselection = (Button) findViewById(R.id.drawingselection);
         formsView = (Button) findViewById(R.id.FormsList);
 
         tManageSelect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentManager fm = getFragmentManager();
-                popupbox dialogFragment2 = popupbox.newInstance("WarningBoxRAWorkingatheights");
-                dialogFragment2.show(fm, "Sample Fragment");
-                //startActivity(new Intent(LandingPage.this, Sheet0.class));
+                startActivity(new Intent(LandingPage.this, FormsList.class));
+            }
+        });
+
+        drawingselection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LandingPage.this, TMPSelection_001.class));
             }
         });
 
         formsView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LandingPage.this, FormsList.class));
+                startActivity(new Intent(LandingPage.this, TMPSelection_001.class));
             }
         });
 
