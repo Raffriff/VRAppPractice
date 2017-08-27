@@ -153,7 +153,7 @@ public class Register_Page extends AppCompatActivity implements View.OnClickList
 
     public int userCounter(int userCount){
 
-        userCount++;
+        userCount = userCount + 2;
         return userCount;
     }
 
