@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.david.vrapppractice.TMPSelection_001">
+    tools:context="com.example.david.vrapppractice.TMPSheetJ">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -20,6 +20,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_tmpselection_001" />
+    <include layout="@layout/content_tmpsheet_j" />
 
 </android.support.design.widget.CoordinatorLayout>

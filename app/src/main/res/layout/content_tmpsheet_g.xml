@@ -1,0 +1,1840 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.david.vrapppractice.TMPSheetG"
+    tools:showIn="@layout/activity_tmpsheet_g"
+    android:id="@+id/content_at__traffic_plan_selection"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/trans"
+                        android:gravity="center"
+                        android:text="Sheet G: TItle Block - Continuous mobile operations Including minor Kerbside Works during periods of Low Risk"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="25sp"
+                        android:textStyle="normal|bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutSheetG_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_roundoff2">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="This sheet covers predominantly continuous"
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="mobile operations involving only a single"
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="vehicle. This includes brief periodic stops"
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="by vehicle operatives. Works in this category"
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="may omit use of cones and barriers, once"
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="the following criteria are met, and provided"
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="that safe working methods are used."
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:id="@+id/BTSheetG_Start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_roundoff2"
+                    android:text="Start" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutSheetG_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_roundoff2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="20dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Is jobsite along the kerb?"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            tools:ignore="DisableBaselineAlignment">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="No"
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,TooDeepLayout" />
+                                    </FrameLayout>
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_2_Tickbox_No"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Red_tickbox"
+                                        android:clickable="false"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_2_Tickbox_Yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Green_tickbox"
+                                        android:clickable="false"
+                                        android:gravity="center"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="Yes"
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutSheetG_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_roundoff2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="20dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Is there good visibility?"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Including weather, and obstructions to"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="to view, junctions."
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            tools:ignore="DisableBaselineAlignment">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="No"
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,TooDeepLayout" />
+                                    </FrameLayout>
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_3_Tickbox_No"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Red_tickbox"
+                                        android:clickable="false"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_3_Tickbox_Yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Green_tickbox"
+                                        android:clickable="false"
+                                        android:gravity="center"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="Yes"
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutSheetG_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_roundoff2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="20dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Is it a period of low risk?"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="i.e. off-peak, low traffic and"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="pedestrian volumes etc."
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            tools:ignore="DisableBaselineAlignment">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="No"
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,TooDeepLayout" />
+                                    </FrameLayout>
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_4_Tickbox_No"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Red_tickbox"
+                                        android:clickable="false"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_4_Tickbox_Yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Green_tickbox"
+                                        android:clickable="false"
+                                        android:gravity="center"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="Yes"
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutSheetG_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_roundoff2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="20dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Is works vehicle conspicuously coloured"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="and are all operatives wearing CLASS"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="to view, junctions."
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp"
+                                    tools:text="III high visibility clothing?" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            tools:ignore="DisableBaselineAlignment">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="No"
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,TooDeepLayout" />
+                                    </FrameLayout>
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_5_Tickbox_No"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Red_tickbox"
+                                        android:clickable="false"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_5_Tickbox_Yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Green_tickbox"
+                                        android:clickable="false"
+                                        android:gravity="center"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="Yes"
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutSheetG_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_roundoff2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="20dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Are roof mounted beacons operating?"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            tools:ignore="DisableBaselineAlignment">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="No"
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,TooDeepLayout" />
+                                    </FrameLayout>
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_6_Tickbox_No"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Red_tickbox"
+                                        android:clickable="false"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_6_Tickbox_Yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Green_tickbox"
+                                        android:clickable="false"
+                                        android:gravity="center"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="Yes"
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutSheetG_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_roundoff2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="20dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Is a KEEP LEFT/KEEP RIGHT BLUE ARROW"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="sign used (as appropriate)?"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="[Vehicle mounted sign to be covered"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="when moving.]"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            tools:ignore="DisableBaselineAlignment">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="No"
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,TooDeepLayout" />
+                                    </FrameLayout>
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_7_Tickbox_No"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Red_tickbox"
+                                        android:clickable="false"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_7_Tickbox_Yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Green_tickbox"
+                                        android:clickable="false"
+                                        android:gravity="center"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="Yes"
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutSheetG_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_roundoff2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="20dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="For works at junctions, operatives can work"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="from the footpath, an Advance Warning sign,"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="and a Blue Arrow sign are placed to warn"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="traffic on the same side of the road"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="as the works?"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            tools:ignore="DisableBaselineAlignment">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="No"
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,TooDeepLayout" />
+                                    </FrameLayout>
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_8_Tickbox_No"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Red_tickbox"
+                                        android:clickable="false"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_8_Tickbox_Yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Green_tickbox"
+                                        android:clickable="false"
+                                        android:gravity="center"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="Yes"
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutSheetG_9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_roundoff2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="20dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Is there a traffic build-up behind the works"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="vehicle?"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Where traffic congeston is unlikely to occur."
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            tools:ignore="DisableBaselineAlignment">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="No"
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,TooDeepLayout" />
+                                    </FrameLayout>
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_9_Tickbox_No"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Red_tickbox"
+                                        android:clickable="false"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_9_Tickbox_Yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Green_tickbox"
+                                        android:clickable="false"
+                                        android:gravity="center"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="Yes"
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutSheetG_10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_roundoff2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="20dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Is works vehicle required to make occasional"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="stops?"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            tools:ignore="DisableBaselineAlignment">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="No"
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,TooDeepLayout" />
+                                    </FrameLayout>
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_10_Tickbox_No"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Red_tickbox"
+                                        android:clickable="false"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="20dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                                    <CheckBox
+                                        android:id="@+id/CKSheetG_10_Tickbox_Yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/Green_tickbox"
+                                        android:clickable="false"
+                                        android:gravity="center"
+                                        android:scaleX="1.6"
+                                        android:scaleY="1.6" />
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="Yes"
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            android:textStyle="normal|bold"
+                                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutSheetG_UseSheet0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/FrameLayout_Orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_roundoff3"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:paddingTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:text="Use Sheet 0 to select appropriate"
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:text="traffic management plan, or refer"
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:text="to your inspector."
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                                android:textStyle="normal|bold" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutSheetG_Passive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/FrameLayout_Orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_roundoff3"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:paddingTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:text="Passive self regulating GIVE and TAKE"
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:text="traffic management may be used."
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                                android:textStyle="normal|bold" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutSheetG_AdvanceWarning"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/FrameLayout_Orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_roundoff3"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:paddingTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:text="Advance Warning Signs are required."
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:text="Signs to be placed on all approaches"
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:text="so they are visible to traffic at least 50"
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:text="metres away. Works should not take"
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:text="place more than 1km from these"
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:text="signs."
+                                android:textAlignment="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                                android:textStyle="normal|bold" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutSheetG_11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_roundoff2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="20dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Complete the works in a safe manner."
+                                    android:textAlignment="center"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

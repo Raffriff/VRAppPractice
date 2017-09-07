@@ -80,6 +80,46 @@
         <activity
             android:name=".TMPSelection_001"
             android:label="@string/title_activity_tmpselection_001"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TMPSheetA"
+            android:label="@string/title_activity_tmpsheet"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TMPSheetB"
+            android:label="@string/title_activity_tmpsheet_b"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TMPSheetC"
+            android:label="@string/title_activity_tmpsheet_c"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TMPSheetD"
+            android:label="@string/title_activity_tmpsheet_d"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TMPSheetE"
+            android:label="@string/title_activity_tmpsheet_e"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TMPSheetF"
+            android:label="@string/title_activity_tmpsheet_f"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TMPSheetG"
+            android:label="@string/title_activity_tmpsheet_g"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TMPSheetH"
+            android:label="@string/title_activity_tmpsheet_h"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TMPSheetJ"
+            android:label="@string/title_activity_tmpsheet_j"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TMPSheetK"
+            android:label="@string/title_activity_tmpsheet_k"
             android:theme="@style/AppTheme"></activity>
     </application>
 

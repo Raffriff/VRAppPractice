@@ -1,5 +1,6 @@
 package com.example.david.vrapppractice;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,46 +17,87 @@ public class TMPSelection_001 extends AppCompatActivity {
 
     ScrollView scrollView;
 
-    FrameLayout FrameLayoutSheet0_Road_RefertoInspector;
+    FrameLayout FrameLayoutSheet0_ReferToInspector_1;
+    FrameLayout FrameLayoutSheet0_ReferToInspector_2;
+    FrameLayout FrameLayoutSheet0_ReferToInspector_3;
+    FrameLayout FrameLayoutSheet0_ReferToInspector_4;
 
-    FrameLayout FrameLayoutSheet0_Reinstatment;
-    FrameLayout FrameLayoutSheet0_Reinstatment_minor;
-    FrameLayout FrameLayoutSheet0_Reinstatment_Allstop;
+    FrameLayout FrameLayoutSheet0_2;
+    FrameLayout FrameLayoutSheet0_2_1;
+    FrameLayout FrameLayoutSheet0_2_1_1;
+    FrameLayout FrameLayoutSheet0_2_2;
 
-    FrameLayout FrameLayoutSheetk_Reinstatment_Questions;
+    FrameLayout FrameLayoutSheet0_3;
+    FrameLayout FrameLayoutSheet0_3_1;
+    FrameLayout FrameLayoutSheet0_3_2;
+    FrameLayout FrameLayoutSheet0_3_2_1;
+    FrameLayout FrameLayoutSheet0_4;
+    FrameLayout FrameLayoutSheet0_4_1;
+    FrameLayout FrameLayoutSheet0_4_1_1;
+    FrameLayout FrameLayoutSheet0_4_1_2;
 
-    FrameLayout FrameLayoutSheetk_Reinstatment_Q1;
-    FrameLayout FrameLayoutSheetk_Reinstatment_Q2;
-    FrameLayout FrameLayoutSheetk_Reinstatment_Q3;
-    FrameLayout FrameLayoutSheetk_Reinstatment_Q4;
-    FrameLayout FrameLayoutSheetk_Reinstatment_Q5;
-    FrameLayout FrameLayoutSheetk_Reinstatment_Yes_Answer;
-    FrameLayout FrameLayoutSheetk_Reinstatment_No_Answer;
+    FrameLayout FrameLayoutSheet0_5;
+    FrameLayout FrameLayoutSheet0_5_1;
+    FrameLayout FrameLayoutSheet0_5_1_1;
 
-    CheckBox CKSheet0_Road_Tickbox_No;
-    CheckBox CKSheet0_Road_Tickbox_Yes;
+    FrameLayout FrameLayoutSheet0_6;
+    FrameLayout FrameLayoutSheet0_6_1;
+    //FrameLayout FrameLayoutSheetk_Reinstatment_Yes_Answer1;
+    //FrameLayout FrameLayoutSheetk_Reinstatment_No_Answer;
 
-    CheckBox CKSheet0_Reinstatment_Tickbox_No;
-    CheckBox CKSheet0_Reinstatment_Tickbox_Yes;
+    CheckBox CKSheet0_1_Tickbox_No;
+    CheckBox CKSheet0_1_Tickbox_Yes;
 
-    CheckBox CKSheet0_Reinstatment_Tickbox_minor_Yes;
-    CheckBox CKSheet0_Reinstatment_Tickbox_minor_No;
+    CheckBox CKSheet0_2_Tickbox_No;
+    CheckBox CKSheet0_2_Tickbox_Yes;
 
-    CheckBox CKSheet0_Reinstatment_Tickbox_Allstop_Yes;
-    CheckBox CKSheet0_Reinstatment_Tickbox_Allstop_No;
+    CheckBox CKSheet0_2_1_Tickbox_Yes;
+    CheckBox CKSheet0_2_1_Tickbox_No;
 
-    CheckBox FrameLayoutSheetk_Reinstatment_Q1_No;
-    CheckBox FrameLayoutSheetk_Reinstatment_Q1_Yes;
-    CheckBox FrameLayoutSheetk_Reinstatment_Q2_No;
-    CheckBox FrameLayoutSheetk_Reinstatment_Q2_Yes;
-    CheckBox FrameLayoutSheetk_Reinstatment_Q3_No;
-    CheckBox FrameLayoutSheetk_Reinstatment_Q3_Yes;
-    CheckBox FrameLayoutSheetk_Reinstatment_Q4_No;
-    CheckBox FrameLayoutSheetk_Reinstatment_Q4_Yes;
-    CheckBox FrameLayoutSheetk_Reinstatment_Q5_No;
-    CheckBox FrameLayoutSheetk_Reinstatment_Q5_Yes;
+    CheckBox CKSheet0_2_1_1_Tickbox_Yes;
+    CheckBox CKSheet0_2_1_1_Tickbox_No;
 
+    CheckBox CKSheet0_2_2_Tickbox_Yes;
+    CheckBox CKSheet0_2_2_Tickbox_No;
 
+    CheckBox CKSheet0_3_Tickbox_No;
+    CheckBox CKSheet0_3_Tickbox_Yes;
+
+    CheckBox CKSheet0_3_1_Tickbox_No;
+    CheckBox CKSheet0_3_1_Tickbox_Yes;
+
+    CheckBox CKSheet0_3_2_Tickbox_No;
+    CheckBox CKSheet0_3_2_Tickbox_Yes;
+
+    CheckBox CKSheet0_3_2_1_Tickbox_No;
+    CheckBox CKSheet0_3_2_1_Tickbox_Yes;
+
+    CheckBox CKSheet0_4_Tickbox_No;
+    CheckBox CKSheet0_4_Tickbox_Yes;
+
+    CheckBox CKSheet0_4_1_Tickbox_No;
+    CheckBox CKSheet0_4_1_Tickbox_Yes;
+
+    CheckBox CKSheet0_4_1_1_Tickbox_No;
+    CheckBox CKSheet0_4_1_1_Tickbox_Yes;
+
+    CheckBox CKSheet0_4_1_2_Tickbox_No;
+    CheckBox CKSheet0_4_1_2_Tickbox_Yes;
+
+    CheckBox CKSheet0_5_Tickbox_No;
+    CheckBox CKSheet0_5_Tickbox_Yes;
+
+    CheckBox CKSheet0_5_1_Tickbox_No;
+    CheckBox CKSheet0_5_1_Tickbox_Yes;
+
+    CheckBox CKSheet0_5_1_1_Tickbox_No;
+    CheckBox CKSheet0_5_1_1_Tickbox_Yes;
+
+    CheckBox CKSheet0_6_Tickbox_No;
+    CheckBox CKSheet0_6_Tickbox_Yes;
+
+    CheckBox CKSheet0_6_1_Tickbox_No;
+    CheckBox CKSheet0_6_1_Tickbox_Yes;
 
 
 
@@ -64,13 +106,7 @@ public class TMPSelection_001 extends AppCompatActivity {
     Boolean FrameLayoutSheet0_Reinstatmentpressed = false;
     Boolean FrameLayoutSheet0_Reinstatment_minorpressed = false;
     Boolean FrameLayoutSheet0_Reinstatment_Allstoppressed = false;
-    Boolean FrameLayoutSheetk_Reinstatment_Questionspressed = false;
 
-    Boolean FrameLayoutSheetk_Reinstatment_Q1pressed = false;
-    Boolean FrameLayoutSheetk_Reinstatment_Q2pressed = false;
-    Boolean FrameLayoutSheetk_Reinstatment_Q3pressed = false;
-    Boolean FrameLayoutSheetk_Reinstatment_Q4pressed = false;
-    Boolean FrameLayoutSheetk_Reinstatment_Q5pressed = false;
 
 
     @Override
@@ -83,98 +119,195 @@ public class TMPSelection_001 extends AppCompatActivity {
 
         scrollView = (ScrollView) findViewById(R.id.scrollView);
 
-        CKSheet0_Road_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_Road_Tickbox_No);
-        CKSheet0_Road_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_Road_Tickbox_Yes);
+        CKSheet0_1_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_1_Tickbox_No);
+        CKSheet0_1_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_1_Tickbox_Yes);
 
-        CKSheet0_Reinstatment_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_Reinstatment_Tickbox_Yes);
-        CKSheet0_Reinstatment_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_Reinstatment_Tickbox_No);
+        CKSheet0_2_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_2_Tickbox_Yes);
+        CKSheet0_2_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_2_Tickbox_No);
 
-        CKSheet0_Reinstatment_Tickbox_minor_Yes = (CheckBox) findViewById(R.id.CKSheet0_Reinstatment_Tickbox_minor_Yes);
-        CKSheet0_Reinstatment_Tickbox_minor_No = (CheckBox) findViewById(R.id.CKSheet0_Reinstatment_Tickbox_minor_No);
+        CKSheet0_2_1_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_2_1_Tickbox_Yes);
+        CKSheet0_2_1_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_2_1_Tickbox_No);
 
-        CKSheet0_Reinstatment_Tickbox_Allstop_Yes = (CheckBox) findViewById(R.id.CKSheet0_Reinstatment_Tickbox_Allstop_Yes);
-        CKSheet0_Reinstatment_Tickbox_Allstop_No = (CheckBox) findViewById(R.id.CKSheet0_Reinstatment_Tickbox_Allstop_No);
+        CKSheet0_2_1_1_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_2_1_1_Tickbox_Yes);
+        CKSheet0_2_1_1_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_2_1_1_Tickbox_No);
 
-        FrameLayoutSheetk_Reinstatment_Q1_No = (CheckBox) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Q1_No);
-        FrameLayoutSheetk_Reinstatment_Q1_Yes = (CheckBox) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Q1_Yes);
-        FrameLayoutSheetk_Reinstatment_Q2_No = (CheckBox) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Q2_No);
-        FrameLayoutSheetk_Reinstatment_Q2_Yes = (CheckBox) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Q2_Yes);
-        FrameLayoutSheetk_Reinstatment_Q3_No = (CheckBox) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Q3_No);
-        FrameLayoutSheetk_Reinstatment_Q3_Yes = (CheckBox) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Q3_Yes);
-        FrameLayoutSheetk_Reinstatment_Q4_No = (CheckBox) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Q4_No);
-        FrameLayoutSheetk_Reinstatment_Q4_Yes = (CheckBox) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Q4_Yes);
-        FrameLayoutSheetk_Reinstatment_Q5_No = (CheckBox) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Q5_No);
-        FrameLayoutSheetk_Reinstatment_Q5_Yes = (CheckBox) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Q5_Yes);
+        CKSheet0_2_2_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_2_2_Tickbox_Yes);
+        CKSheet0_2_2_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_2_2_Tickbox_No);
 
-        FrameLayoutSheet0_Road_RefertoInspector = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_Road_RefertoInspector);
-        FrameLayoutSheet0_Reinstatment = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_Reinstatment);
-        FrameLayoutSheet0_Reinstatment_minor = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_Reinstatment_minor);
-        FrameLayoutSheet0_Reinstatment_Allstop = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_Reinstatment_Allstop);
+        CKSheet0_3_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_3_Tickbox_No);
+        CKSheet0_3_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_3_Tickbox_Yes);
 
-        FrameLayoutSheetk_Reinstatment_Questions = (FrameLayout) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Questions);
-        FrameLayoutSheetk_Reinstatment_Q1 = (FrameLayout) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Q1);
-        FrameLayoutSheetk_Reinstatment_Q2 = (FrameLayout) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Q2);
-        FrameLayoutSheetk_Reinstatment_Q3 = (FrameLayout) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Q3);
-        FrameLayoutSheetk_Reinstatment_Q4 = (FrameLayout) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Q4);
-        FrameLayoutSheetk_Reinstatment_Q5 = (FrameLayout) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Q5);
-        FrameLayoutSheetk_Reinstatment_Yes_Answer = (FrameLayout) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Yes_Answer);
-        FrameLayoutSheetk_Reinstatment_No_Answer = (FrameLayout) findViewById(R.id.FrameLayoutSheetk_Reinstatment_No_Answer);
+        CKSheet0_3_1_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_3_1_Tickbox_No);
+        CKSheet0_3_1_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_3_1_Tickbox_Yes);
+
+        CKSheet0_3_2_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_3_2_Tickbox_No);
+        CKSheet0_3_2_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_3_2_Tickbox_Yes);
+
+        CKSheet0_3_2_1_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_3_2_1_Tickbox_No);
+        CKSheet0_3_2_1_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_3_2_1_Tickbox_Yes);
+
+        CKSheet0_4_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_4_Tickbox_No);
+        CKSheet0_4_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_4_Tickbox_Yes);
+
+        CKSheet0_4_1_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_4_1_Tickbox_No);
+        CKSheet0_4_1_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_4_1_Tickbox_Yes);
+
+        CKSheet0_4_1_1_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_4_1_1_Tickbox_No);
+        CKSheet0_4_1_1_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_4_1_1_Tickbox_Yes);
+
+        CKSheet0_4_1_2_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_4_1_2_Tickbox_No);
+        CKSheet0_4_1_2_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_4_1_2_Tickbox_Yes);
+
+        CKSheet0_5_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_5_Tickbox_No);
+        CKSheet0_5_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_5_Tickbox_Yes);
+
+        CKSheet0_5_1_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_5_1_Tickbox_No);
+        CKSheet0_5_1_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_5_1_Tickbox_Yes);
+
+        CKSheet0_5_1_1_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_5_1_1_Tickbox_No);
+        CKSheet0_5_1_1_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_5_1_1_Tickbox_Yes);
+
+        CKSheet0_6_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_6_Tickbox_No);
+        CKSheet0_6_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_6_Tickbox_Yes);
+
+        CKSheet0_6_1_Tickbox_No = (CheckBox) findViewById(R.id.CKSheet0_6_1_Tickbox_No);
+        CKSheet0_6_1_Tickbox_Yes = (CheckBox) findViewById(R.id.CKSheet0_6_1_Tickbox_Yes);
+
+        FrameLayoutSheet0_ReferToInspector_1 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_ReferToInspector_1);
+        FrameLayoutSheet0_ReferToInspector_2 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_ReferToInspector_2);
+        FrameLayoutSheet0_ReferToInspector_3 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_ReferToInspector_3);
+        FrameLayoutSheet0_ReferToInspector_4 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_ReferToInspector_4);
+
+        FrameLayoutSheet0_2 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_2);
+        FrameLayoutSheet0_2_1 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_2_1);
+        FrameLayoutSheet0_2_1_1 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_2_1_1);
+        FrameLayoutSheet0_2_2 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_2_2);
+
+
+        FrameLayoutSheet0_3 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_3);
+        FrameLayoutSheet0_3_1 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_3_1);
+        FrameLayoutSheet0_3_2 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_3_2);
+        FrameLayoutSheet0_3_2_1 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_3_2_1);
+
+        FrameLayoutSheet0_4 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_4);
+        FrameLayoutSheet0_4_1 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_4_1);
+        FrameLayoutSheet0_4_1_1 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_4_1_1);
+        FrameLayoutSheet0_4_1_2 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_4_1_2);
+
+        FrameLayoutSheet0_5 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_5);
+        FrameLayoutSheet0_5_1 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_5_1);
+        FrameLayoutSheet0_5_1_1 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_5_1_1);
+
+        FrameLayoutSheet0_6 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_6);
+        FrameLayoutSheet0_6_1 = (FrameLayout) findViewById(R.id.FrameLayoutSheet0_6_1);
+
+        //FrameLayoutSheetk_Reinstatment_Yes_Answer = (FrameLayout) findViewById(R.id.FrameLayoutSheetk_Reinstatment_Yes_Answer);
+        //FrameLayoutSheetk_Reinstatment_No_Answer = (FrameLayout) findViewById(R.id.FrameLayoutSheetk_Reinstatment_No_Answer);
 
 
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// FrameLayoutSheet0_Road /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        FrameLayoutSheet0_Road_RefertoInspector.setVisibility(LinearLayout.GONE);
-        FrameLayoutSheet0_Reinstatment.setVisibility(LinearLayout.GONE);
-        FrameLayoutSheet0_Reinstatment_minor.setVisibility(LinearLayout.GONE);
-        FrameLayoutSheet0_Reinstatment_Allstop.setVisibility(LinearLayout.GONE);
-        FrameLayoutSheetk_Reinstatment_Questions.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_2.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_3.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_4.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
 
-        CKSheet0_Road_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
+
+        CKSheet0_1_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if (CKSheet0_Road_Tickbox_Yes.isChecked()) {
+                if (CKSheet0_1_Tickbox_Yes.isChecked()) {
                     if (FrameLayoutSheet0_Road_RefertoInspectorpressed == false) ;
                     {
-                        FrameLayoutSheet0_Road_RefertoInspector.setVisibility(LinearLayout.VISIBLE);
-                        FrameLayoutSheet0_Reinstatment.setVisibility(LinearLayout.GONE);
-                        FrameLayoutSheet0_Reinstatment_minor.setVisibility(LinearLayout.GONE);
-                        FrameLayoutSheet0_Reinstatment_Allstop.setVisibility(LinearLayout.GONE);
-                        FrameLayoutSheetk_Reinstatment_Questions.setVisibility(LinearLayout.GONE);
-                        CKSheet0_Road_Tickbox_No.setChecked(false);
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_1_Tickbox_No.setChecked(false);
                     }
                 } else {
-                    FrameLayoutSheet0_Road_RefertoInspector.setVisibility(LinearLayout.GONE);
-                    CKSheet0_Road_Tickbox_No.setChecked(false);
-                    CKSheet0_Reinstatment_Tickbox_No.setChecked(false);
-                    CKSheet0_Reinstatment_Tickbox_Yes.setChecked(false);
+                    FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                    CKSheet0_1_Tickbox_No.setChecked(false);
+                    CKSheet0_2_Tickbox_No.setChecked(false);
+                    CKSheet0_2_Tickbox_Yes.setChecked(false);
                 }
             }
 
         });
 
-        CKSheet0_Road_Tickbox_No.setOnClickListener(new View.OnClickListener() {
+        CKSheet0_1_Tickbox_No.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if (CKSheet0_Road_Tickbox_No.isChecked()) {
+                if (CKSheet0_1_Tickbox_No.isChecked()) {
                     {
                         if (FrameLayoutSheet0_Reinstatmentpressed == false) ;
-                        FrameLayoutSheet0_Road_RefertoInspector.setVisibility(LinearLayout.GONE);
-                        FrameLayoutSheet0_Reinstatment.setVisibility(LinearLayout.VISIBLE);
-                        FrameLayoutSheet0_Reinstatment_minor.setVisibility(LinearLayout.GONE);
-                        FrameLayoutSheet0_Reinstatment_Allstop.setVisibility(LinearLayout.GONE);
-                        FrameLayoutSheetk_Reinstatment_Questions.setVisibility(LinearLayout.GONE);
-                        CKSheet0_Road_Tickbox_Yes.setChecked(false);
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_1_Tickbox_Yes.setChecked(false);
                     }
                 } else {
-                    FrameLayoutSheet0_Reinstatment.setVisibility(LinearLayout.GONE);
-                    CKSheet0_Road_Tickbox_Yes.setChecked(false);
-                    CKSheet0_Reinstatment_Tickbox_No.setChecked(false);
-                    CKSheet0_Reinstatment_Tickbox_Yes.setChecked(false);
+                    FrameLayoutSheet0_2.setVisibility(LinearLayout.GONE);
+                    CKSheet0_1_Tickbox_Yes.setChecked(false);
+                    CKSheet0_2_Tickbox_No.setChecked(false);
+                    CKSheet0_2_Tickbox_Yes.setChecked(false);
                 }
             }
 
@@ -184,28 +317,44 @@ public class TMPSelection_001 extends AppCompatActivity {
 
 
 
-        CKSheet0_Reinstatment_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
+        CKSheet0_2_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if (CKSheet0_Reinstatment_Tickbox_Yes.isChecked()) {
+                if (CKSheet0_2_Tickbox_Yes.isChecked()) {
                     {
                         if (FrameLayoutSheet0_Reinstatmentpressed == false) ;
-                        FrameLayoutSheet0_Road_RefertoInspector.setVisibility(LinearLayout.GONE);
-                        FrameLayoutSheet0_Reinstatment.setVisibility(LinearLayout.VISIBLE);
-                        FrameLayoutSheet0_Reinstatment_minor.setVisibility(LinearLayout.VISIBLE);
-                        FrameLayoutSheet0_Reinstatment_Allstop.setVisibility(LinearLayout.GONE);
-                        FrameLayoutSheetk_Reinstatment_Questions.setVisibility(LinearLayout.GONE);
-                        CKSheet0_Reinstatment_Tickbox_No.setChecked(false);
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_2_Tickbox_No.setChecked(false);
 
 
                     }
                 } else {
-                    FrameLayoutSheet0_Reinstatment_minor.setVisibility(LinearLayout.GONE);
-                    CKSheet0_Reinstatment_Tickbox_No.setChecked(false);
-                    CKSheet0_Reinstatment_Tickbox_minor_No.setChecked(false);
-                    CKSheet0_Reinstatment_Tickbox_minor_Yes.setChecked(false);
+                    FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                    CKSheet0_2_Tickbox_No.setChecked(false);
+                    CKSheet0_2_1_Tickbox_No.setChecked(false);
+                    CKSheet0_2_1_Tickbox_Yes.setChecked(false);
 
                 }
             }
@@ -213,193 +362,1064 @@ public class TMPSelection_001 extends AppCompatActivity {
 
         });
 
-        CKSheet0_Reinstatment_Tickbox_No.setOnClickListener(new View.OnClickListener() {
+        CKSheet0_2_Tickbox_No.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if (CKSheet0_Reinstatment_Tickbox_No.isChecked()) {
+                if (CKSheet0_2_Tickbox_No.isChecked()) {
                     {
                         if (FrameLayoutSheet0_Reinstatmentpressed == false) ;
-                        FrameLayoutSheet0_Road_RefertoInspector.setVisibility(LinearLayout.GONE);
-                        FrameLayoutSheet0_Reinstatment.setVisibility(LinearLayout.VISIBLE);
-                        FrameLayoutSheet0_Reinstatment_minor.setVisibility(LinearLayout.GONE);
-                        FrameLayoutSheet0_Reinstatment_Allstop.setVisibility(LinearLayout.GONE);
-                        FrameLayoutSheetk_Reinstatment_Questions.setVisibility(LinearLayout.GONE);
-                        CKSheet0_Reinstatment_Tickbox_Yes.setChecked(false);
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_2_Tickbox_Yes.setChecked(false);
 
                     }
                 } else {
-                    FrameLayoutSheet0_Reinstatment_minor.setVisibility(LinearLayout.GONE);
-                    CKSheet0_Reinstatment_Tickbox_Yes.setChecked(false);
-                    CKSheet0_Reinstatment_Tickbox_minor_No.setChecked(false);
-                    CKSheet0_Reinstatment_Tickbox_minor_Yes.setChecked(false);
+                    FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                    CKSheet0_2_Tickbox_Yes.setChecked(false);
+                    CKSheet0_2_1_Tickbox_No.setChecked(false);
+                    CKSheet0_2_1_Tickbox_Yes.setChecked(false);
                 }
             }
 
         });
 
-        CKSheet0_Reinstatment_Tickbox_minor_Yes.setOnClickListener(new View.OnClickListener() {
+        CKSheet0_2_1_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if (CKSheet0_Reinstatment_Tickbox_minor_Yes.isChecked()) {
+                if (CKSheet0_2_1_Tickbox_Yes.isChecked()) {
                     {
                         if (FrameLayoutSheet0_Reinstatment_minorpressed == false) ;
-                        FrameLayoutSheet0_Road_RefertoInspector.setVisibility(LinearLayout.GONE);
-                        FrameLayoutSheet0_Reinstatment.setVisibility(LinearLayout.VISIBLE);
-                        FrameLayoutSheet0_Reinstatment_minor.setVisibility(LinearLayout.VISIBLE);
-                        FrameLayoutSheet0_Reinstatment_Allstop.setVisibility(LinearLayout.GONE);
-                        FrameLayoutSheetk_Reinstatment_Questions.setVisibility(LinearLayout.GONE);
-                        CKSheet0_Reinstatment_Tickbox_minor_No.setChecked(false);
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_2_1_Tickbox_No.setChecked(false);
 
                     }
                 } else {
-                    CKSheet0_Reinstatment_Tickbox_minor_No.setChecked(false);
+                    CKSheet0_2_1_Tickbox_No.setChecked(false);
                 }
             }
 
 
         });
 
-        CKSheet0_Reinstatment_Tickbox_minor_No.setOnClickListener(new View.OnClickListener() {
+        CKSheet0_2_1_Tickbox_No.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if (CKSheet0_Reinstatment_Tickbox_minor_No.isChecked()) {
+                if (CKSheet0_2_1_Tickbox_No.isChecked()) {
                     {
                         if (FrameLayoutSheet0_Reinstatment_minorpressed == false) ;
-                        FrameLayoutSheet0_Road_RefertoInspector.setVisibility(LinearLayout.GONE);
-                        FrameLayoutSheet0_Reinstatment.setVisibility(LinearLayout.VISIBLE);
-                        FrameLayoutSheet0_Reinstatment_minor.setVisibility(LinearLayout.VISIBLE);
-                        FrameLayoutSheet0_Reinstatment_Allstop.setVisibility(LinearLayout.VISIBLE);
-                        FrameLayoutSheetk_Reinstatment_Questions.setVisibility(LinearLayout.GONE);
-                        CKSheet0_Reinstatment_Tickbox_minor_Yes.setChecked(false);
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_2_1_Tickbox_Yes.setChecked(false);
 
                     }
                 } else {
-                    FrameLayoutSheet0_Reinstatment_Allstop.setVisibility(LinearLayout.GONE);
-                    CKSheet0_Reinstatment_Tickbox_minor_Yes.setChecked(false);
+                    FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                    CKSheet0_2_1_Tickbox_Yes.setChecked(false);
                 }
             }
 
         });
 
-        CKSheet0_Reinstatment_Tickbox_Allstop_Yes.setOnClickListener(new View.OnClickListener() {
+        CKSheet0_2_1_1_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if (CKSheet0_Reinstatment_Tickbox_Allstop_Yes.isChecked()) {
+                if (CKSheet0_2_1_1_Tickbox_Yes.isChecked()) {
+                    {
+                        startActivity(new Intent(TMPSelection_001.this, TMPSheetH.class));
+                        CKSheet0_2_1_1_Tickbox_No.setChecked(false);
+
+                    }
+                } else {
+                    CKSheet0_2_1_1_Tickbox_No.setChecked(false);
+                }
+            }
+
+
+        });
+
+        CKSheet0_2_1_1_Tickbox_No.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_2_1_1_Tickbox_No.isChecked()) {
+                    {
+                        startActivity(new Intent(TMPSelection_001.this, TMPSheetJ.class));
+                        CKSheet0_2_1_1_Tickbox_Yes.setChecked(false);
+                    }
+                } else {
+                    FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                    CKSheet0_2_1_1_Tickbox_Yes.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_2_2_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_2_2_Tickbox_Yes.isChecked()) {
+                    {
+                        startActivity(new Intent(TMPSelection_001.this, TMPSheetK.class));
+                        CKSheet0_2_2_Tickbox_No.setChecked(false);
+                    }
+                } else {
+                    CKSheet0_2_2_Tickbox_No.setChecked(false);
+                }
+            }
+
+
+        });
+
+        CKSheet0_2_2_Tickbox_No.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_2_2_Tickbox_No.isChecked()) {
                     {
                         if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
-                        FrameLayoutSheet0_Road_RefertoInspector.setVisibility(LinearLayout.GONE);
-                        FrameLayoutSheet0_Reinstatment.setVisibility(LinearLayout.VISIBLE);
-                        FrameLayoutSheet0_Reinstatment_minor.setVisibility(LinearLayout.VISIBLE);
-                        FrameLayoutSheet0_Reinstatment_Allstop.setVisibility(LinearLayout.VISIBLE);
-                        FrameLayoutSheetk_Reinstatment_Questions.setVisibility(LinearLayout.VISIBLE);
-                        CKSheet0_Reinstatment_Tickbox_Allstop_No.setChecked(false);
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_2_2_Tickbox_Yes.setChecked(false);
+                        CKSheet0_2_Tickbox_Yes.setChecked(false);
+                        CKSheet0_2_Tickbox_No.setChecked(true);
                     }
                 } else {
-                    FrameLayoutSheetk_Reinstatment_Questions.setVisibility(LinearLayout.GONE);
-                    CKSheet0_Reinstatment_Tickbox_Allstop_No.setChecked(false);
+                    CKSheet0_2_2_Tickbox_Yes.setChecked(false);
                 }
             }
 
-
         });
 
-        CKSheet0_Reinstatment_Tickbox_Allstop_No.setOnClickListener(new View.OnClickListener() {
+        CKSheet0_3_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if (CKSheet0_Reinstatment_Tickbox_Allstop_No.isChecked()) {
+                if (CKSheet0_3_Tickbox_Yes.isChecked()) {
                     {
                         if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
-                        FrameLayoutSheet0_Road_RefertoInspector.setVisibility(LinearLayout.GONE);
-                        FrameLayoutSheet0_Reinstatment.setVisibility(LinearLayout.VISIBLE);
-                        FrameLayoutSheet0_Reinstatment_minor.setVisibility(LinearLayout.VISIBLE);
-                        FrameLayoutSheet0_Reinstatment_Allstop.setVisibility(LinearLayout.VISIBLE);
-                        FrameLayoutSheetk_Reinstatment_Questions.setVisibility(LinearLayout.GONE);
-                        CKSheet0_Reinstatment_Tickbox_Allstop_Yes.setChecked(false);
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_3_Tickbox_No.setChecked(false);
                     }
                 } else {
-                    FrameLayoutSheetk_Reinstatment_Questions.setVisibility(LinearLayout.GONE);
-                    CKSheet0_Reinstatment_Tickbox_Allstop_Yes.setChecked(false);
+                    CKSheet0_3_Tickbox_No.setChecked(false);
                 }
             }
 
         });
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// FrameLayoutSheet0_Road /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// FrameLayoutSheet K /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        FrameLayoutSheetk_Reinstatment_Q1.setVisibility(LinearLayout.GONE);
-        FrameLayoutSheetk_Reinstatment_Q2.setVisibility(LinearLayout.GONE);
-        FrameLayoutSheetk_Reinstatment_Q3.setVisibility(LinearLayout.GONE);
-        FrameLayoutSheetk_Reinstatment_Q4.setVisibility(LinearLayout.GONE);
-        FrameLayoutSheetk_Reinstatment_Q5.setVisibility(LinearLayout.GONE);
-        FrameLayoutSheetk_Reinstatment_Yes_Answer.setVisibility(LinearLayout.GONE);
-        FrameLayoutSheetk_Reinstatment_No_Answer.setVisibility(LinearLayout.GONE);
-
-        FrameLayoutSheetk_Reinstatment_Q1_No.setOnClickListener(new View.OnClickListener() {
+        CKSheet0_3_Tickbox_No.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if ((FrameLayoutSheetk_Reinstatment_Q1_No.isChecked())
-                        || (FrameLayoutSheetk_Reinstatment_Q2_No.isChecked())
-                        || (FrameLayoutSheetk_Reinstatment_Q3_No.isChecked())
-                        || (FrameLayoutSheetk_Reinstatment_Q4_No.isChecked())
-                        || (FrameLayoutSheetk_Reinstatment_Q5_No.isChecked())) {
-
-                    FrameLayoutSheetk_Reinstatment_No_Answer.setVisibility(LinearLayout.VISIBLE);
-                }
-                else {
-                    FrameLayoutSheetk_Reinstatment_No_Answer.setVisibility(LinearLayout.GONE);
+                if (CKSheet0_3_Tickbox_No.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_3_Tickbox_Yes.setChecked(false);
+                    }
+                } else {
+                    CKSheet0_3_Tickbox_Yes.setChecked(false);
                 }
             }
 
         });
 
-        FrameLayoutSheetk_Reinstatment_Q1_Yes.setOnClickListener(new View.OnClickListener() {
+        CKSheet0_3_1_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if ((FrameLayoutSheetk_Reinstatment_Q1_Yes.isChecked())
-                        || (FrameLayoutSheetk_Reinstatment_Q2_Yes.isChecked())
-                        || (FrameLayoutSheetk_Reinstatment_Q3_Yes.isChecked())
-                        || (FrameLayoutSheetk_Reinstatment_Q4_Yes.isChecked())
-                        || (FrameLayoutSheetk_Reinstatment_Q5_Yes.isChecked())) {
+                if (CKSheet0_3_1_Tickbox_Yes.isChecked()) {
 
-                    FrameLayoutSheetk_Reinstatment_Yes_Answer.setVisibility(LinearLayout.VISIBLE);
-                }
-                else {
-                    FrameLayoutSheetk_Reinstatment_Yes_Answer.setVisibility(LinearLayout.GONE);
+                        startActivity(new Intent(TMPSelection_001.this, TMPSheetA.class));
+                        CKSheet0_3_1_Tickbox_No.setChecked(false);
+
+                } else {
+                    CKSheet0_3_1_Tickbox_No.setChecked(false);
                 }
             }
 
         });
 
+        CKSheet0_3_1_Tickbox_No.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_3_1_Tickbox_No.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_3_1_Tickbox_Yes.setChecked(false);
+                    }
+                } else {
+                    CKSheet0_3_1_Tickbox_Yes.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_3_2_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_3_2_Tickbox_Yes.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_3_2_Tickbox_No.setChecked(false);
+                    }
+                } else {
+                    CKSheet0_3_2_Tickbox_No.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_3_2_Tickbox_No.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_3_2_Tickbox_No.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_3_2_Tickbox_Yes.setChecked(false);
+                        CKSheet0_3_Tickbox_Yes.setChecked(false);
+                        CKSheet0_3_Tickbox_No.setChecked(true);
+
+                    }
+                } else {
+                    CKSheet0_3_2_Tickbox_Yes.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_3_2_1_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_3_2_1_Tickbox_Yes.isChecked()) {
+                    {
+                        startActivity(new Intent(TMPSelection_001.this, TMPSheetG.class));
+                        CKSheet0_3_2_1_Tickbox_No.setChecked(false);
+                    }
+                } else {
+                    CKSheet0_3_2_1_Tickbox_No.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_3_2_1_Tickbox_No.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_3_2_1_Tickbox_No.isChecked()) {
+                    {
+                        startActivity(new Intent(TMPSelection_001.this, TMPSheetB.class));
+                        CKSheet0_3_2_1_Tickbox_Yes.setChecked(false);
+                    }
+                } else {
+                    CKSheet0_3_2_1_Tickbox_Yes.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_4_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_4_Tickbox_Yes.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_4_Tickbox_No.setChecked(false);
+                    }
+                } else {
+                    CKSheet0_4_Tickbox_No.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_4_Tickbox_No.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_4_Tickbox_No.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_4_Tickbox_Yes.setChecked(false);
 
 
+                    }
+                } else {
+                    CKSheet0_4_Tickbox_Yes.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_4_1_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_4_1_Tickbox_Yes.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_4_1_Tickbox_No.setChecked(false);
+                    }
+                } else {
+                    CKSheet0_4_1_Tickbox_No.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_4_1_Tickbox_No.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_4_1_Tickbox_No.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_4_1_Tickbox_Yes.setChecked(false);
+                        CKSheet0_4_Tickbox_Yes.setChecked(false);
+                        CKSheet0_4_Tickbox_No.setChecked(true);
 
 
+                    }
+                } else {
+                    CKSheet0_4_1_Tickbox_Yes.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_4_1_1_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_4_1_1_Tickbox_Yes.isChecked()) {
+                    {
+                        startActivity(new Intent(TMPSelection_001.this, TMPSheetC.class));
+                    }
+                } else {
+                    CKSheet0_4_1_1_Tickbox_No.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_4_1_1_Tickbox_No.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_4_1_1_Tickbox_No.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_4_1_1_Tickbox_Yes.setChecked(false);
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// FrameLayoutSheet K /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    }
+                } else {
+                    CKSheet0_4_1_1_Tickbox_Yes.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_4_1_2_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_4_1_2_Tickbox_Yes.isChecked()) {
+                    {
+                        startActivity(new Intent(TMPSelection_001.this, TMPSheetD.class));
+                    }
+                } else {
+                    CKSheet0_4_1_2_Tickbox_No.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_4_1_2_Tickbox_No.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_4_1_2_Tickbox_No.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_4_1_2_Tickbox_Yes.setChecked(false);
 
 
+                    }
+                } else {
+                    CKSheet0_4_1_2_Tickbox_Yes.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_5_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_5_Tickbox_Yes.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_5_Tickbox_No.setChecked(false);
+                    }
+                } else {
+                    CKSheet0_5_Tickbox_No.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_5_Tickbox_No.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_5_Tickbox_No.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_5_Tickbox_Yes.setChecked(false);
 
 
+                    }
+                } else {
+                    CKSheet0_5_Tickbox_Yes.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_5_1_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_5_1_Tickbox_Yes.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_5_1_Tickbox_No.setChecked(false);
+                    }
+                } else {
+                    CKSheet0_5_1_Tickbox_No.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_5_1_Tickbox_No.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_5_1_Tickbox_No.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_5_1_Tickbox_Yes.setChecked(false);
+                        CKSheet0_5_Tickbox_Yes.setChecked(false);
+                        CKSheet0_5_Tickbox_No.setChecked(true);
 
 
+                    }
+                } else {
+                    CKSheet0_5_1_Tickbox_Yes.setChecked(false);
+                }
+            }
 
+        });
+
+        CKSheet0_5_1_1_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_5_1_1_Tickbox_Yes.isChecked()) {
+                    {
+                        startActivity(new Intent(TMPSelection_001.this, TMPSheetE.class));
+                        CKSheet0_5_1_1_Tickbox_No.setChecked(false);
+                    }
+                } else {
+                    CKSheet0_5_1_1_Tickbox_No.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_5_1_1_Tickbox_No.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_5_1_1_Tickbox_No.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_5_1_1_Tickbox_Yes.setChecked(false);
+
+
+                    }
+                } else {
+                    CKSheet0_5_1_1_Tickbox_Yes.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_6_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_6_Tickbox_Yes.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.VISIBLE);
+                        CKSheet0_6_Tickbox_No.setChecked(false);
+                    }
+                } else {
+                    CKSheet0_6_Tickbox_No.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_6_Tickbox_No.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_6_Tickbox_No.isChecked()) {
+                    {
+                        if (FrameLayoutSheet0_Reinstatment_Allstoppressed == false) ;
+                        FrameLayoutSheet0_ReferToInspector_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_3.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_ReferToInspector_4.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_2_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_3_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_3_2_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_4_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_4_1_2.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_5_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_5_1_1.setVisibility(LinearLayout.GONE);
+                        FrameLayoutSheet0_6.setVisibility(LinearLayout.VISIBLE);
+                        FrameLayoutSheet0_6_1.setVisibility(LinearLayout.GONE);
+                        CKSheet0_6_Tickbox_Yes.setChecked(false);
+
+
+                    }
+                } else {
+                    CKSheet0_6_Tickbox_Yes.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_6_1_Tickbox_Yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_6_1_Tickbox_Yes.isChecked()) {
+                    {
+                        startActivity(new Intent(TMPSelection_001.this, TMPSheetG.class));
+                        CKSheet0_6_1_Tickbox_No.setChecked(false);
+                    }
+                } else {
+                    CKSheet0_6_1_Tickbox_No.setChecked(false);
+                }
+            }
+
+        });
+
+        CKSheet0_6_1_Tickbox_No.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (CKSheet0_6_1_Tickbox_No.isChecked()) {
+                    {
+                        startActivity(new Intent(TMPSelection_001.this, TMPSheetF.class));
+                        CKSheet0_6_1_Tickbox_Yes.setChecked(false);
+
+                    }
+                } else {
+                    CKSheet0_6_1_Tickbox_Yes.setChecked(false);
+                }
+            }
+
+        });
 
     }
 

@@ -24,7 +24,59 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class zRegname extends AppCompatActivity implements View.OnClickListener {
+public class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zRegname extends AppCompatActivity implements View.OnClickListener {
 
 
     private Firebase mRootRef;

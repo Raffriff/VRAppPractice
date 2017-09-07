@@ -38,4 +38,15 @@
     <string name="title_activity_popupbox">popupbox</string>
     <string name="title_activity_forms_list">FormsList</string>
     <string name="title_activity_tmpselection_001">TMPSelection_001</string>
+    <string name="title_activity_tmpsheet">TMPSheetA</string>
+    <string name="title_activity_tmpsheet_">TMPSheet_A</string>
+    <string name="title_activity_tmpsheet_b">TMPSheetB</string>
+    <string name="title_activity_tmpsheet_c">TMPSheetC</string>
+    <string name="title_activity_tmpsheet_d">TMPSheetD</string>
+    <string name="title_activity_tmpsheet_e">TMPSheetE</string>
+    <string name="title_activity_tmpsheet_f">TMPSheetF</string>
+    <string name="title_activity_tmpsheet_g">TMPSheetG</string>
+    <string name="title_activity_tmpsheet_h">TMPSheetH</string>
+    <string name="title_activity_tmpsheet_j">TMPSheetJ</string>
+    <string name="title_activity_tmpsheet_k">TMPSheetK</string>
 </resources>
