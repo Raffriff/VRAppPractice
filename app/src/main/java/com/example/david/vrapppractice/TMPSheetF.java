@@ -1,5 +1,6 @@
 package com.example.david.vrapppractice;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -401,7 +402,7 @@ public class TMPSheetF extends AppCompatActivity {
                     FrameLayoutSheetF_2.setVisibility(LinearLayout.VISIBLE);
                     FrameLayoutSheetF_3.setVisibility(LinearLayout.VISIBLE);
                     FrameLayoutSheetF_4.setVisibility(LinearLayout.VISIBLE);
-                    FrameLayoutSheetF_5.setVisibility(LinearLayout.GONE);
+                    FrameLayoutSheetF_5.setVisibility(LinearLayout.VISIBLE);
                     FrameLayoutSheetF_6.setVisibility(LinearLayout.VISIBLE);
                     FrameLayoutSheetF_6_1.setVisibility(LinearLayout.GONE);
                     FrameLayoutSheetF_7.setVisibility(LinearLayout.VISIBLE);
@@ -461,7 +462,7 @@ public class TMPSheetF extends AppCompatActivity {
                     FrameLayoutSheetF_2.setVisibility(LinearLayout.VISIBLE);
                     FrameLayoutSheetF_3.setVisibility(LinearLayout.VISIBLE);
                     FrameLayoutSheetF_4.setVisibility(LinearLayout.VISIBLE);
-                    FrameLayoutSheetF_5.setVisibility(LinearLayout.VISIBLE);
+                    FrameLayoutSheetF_5.setVisibility(LinearLayout.GONE);
                     FrameLayoutSheetF_6.setVisibility(LinearLayout.GONE);
                     FrameLayoutSheetF_6_1.setVisibility(LinearLayout.VISIBLE);
                     FrameLayoutSheetF_7.setVisibility(LinearLayout.GONE);
@@ -545,7 +546,9 @@ public class TMPSheetF extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetF.this, TMPPlan30.class));
+                Intent i = new Intent(TMPSheetF.this, TMPPlans_1.class);
+                i.putExtra("plan","30");
+                startActivity(i);
 
             }
 
@@ -556,7 +559,9 @@ public class TMPSheetF extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetF.this, TMPPlan31.class));
+                Intent i = new Intent(TMPSheetF.this, TMPPlans_1.class);
+                i.putExtra("plan","31");
+                startActivity(i);
 
             }
 
@@ -567,7 +572,9 @@ public class TMPSheetF extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetF.this, TMPPlan32.class));
+                Intent i = new Intent(TMPSheetF.this, TMPPlans_1.class);
+                i.putExtra("plan","32");
+                startActivity(i);
 
             }
 
@@ -578,7 +585,9 @@ public class TMPSheetF extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetF.this, TMPPlan33.class));
+                Intent i = new Intent(TMPSheetF.this, TMPPlans_1.class);
+                i.putExtra("plan","33");
+                startActivity(i);
 
             }
 

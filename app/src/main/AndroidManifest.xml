@@ -15,6 +15,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Dave APP"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -120,6 +121,21 @@
         <activity
             android:name=".TMPSheetK"
             android:label="@string/title_activity_tmpsheet_k"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TMPPlans"
+            android:label="@string/title_activity_tmpplans"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TMPPlans_1"
+            android:label="@string/title_activity_tmpplans_1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TMPPlans_2"
+            android:label="@string/title_activity_tmpplans_2"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme"></activity>
     </application>
 

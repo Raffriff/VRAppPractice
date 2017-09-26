@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.david.vrapppractice.TMPPlans"
+    tools:showIn="@layout/activity_tmpplans_1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <FrameLayout
+                android:id="@+id/plan18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_18"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/plan20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_20"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/plan21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_21"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/plan22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_22"
+                    android:adjustViewBounds="true" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/plan23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_23"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/plan24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_24"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/plan30"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_30"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/plan31"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_31"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/plan32"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_32"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/plan33"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_33"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/plan40"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_40"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/plan41"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_41"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/plan42"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_42"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>
+
+            <!--<FrameLayout
+                android:id="@+id/plan43"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_43"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/plan46"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_46"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/plan48"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_48"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/plan50"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/plan_50"
+                    android:adjustViewBounds="true"/>
+
+            </FrameLayout>-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

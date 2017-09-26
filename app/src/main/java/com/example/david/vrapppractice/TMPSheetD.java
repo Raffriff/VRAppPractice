@@ -1,5 +1,6 @@
 package com.example.david.vrapppractice;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -649,7 +650,9 @@ public class TMPSheetD extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetD.this, TMPPlan20.class));
+                Intent i = new Intent(TMPSheetD.this, TMPPlans_1.class);
+                i.putExtra("plan","20");
+                startActivity(i);
 
             }
 
@@ -660,7 +663,9 @@ public class TMPSheetD extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetD.this, TMPPlan21.class));
+                Intent i = new Intent(TMPSheetD.this, TMPPlans_1.class);
+                i.putExtra("plan","21");
+                startActivity(i);
 
             }
 
@@ -671,7 +676,9 @@ public class TMPSheetD extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetD.this, TMPPlan22.class));
+                Intent i = new Intent(TMPSheetD.this, TMPPlans_1.class);
+                i.putExtra("plan","22");
+                startActivity(i);
 
             }
 
@@ -682,7 +689,9 @@ public class TMPSheetD extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetD.this, TMPPlan23.class));
+                Intent i = new Intent(TMPSheetD.this, TMPPlans_1.class);
+                i.putExtra("plan","23");
+                startActivity(i);
 
             }
 
@@ -693,7 +702,9 @@ public class TMPSheetD extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetD.this, TMPPlan24.class));
+                Intent i = new Intent(TMPSheetD.this, TMPPlans_1.class);
+                i.putExtra("plan","24");
+                startActivity(i);
 
             }
 

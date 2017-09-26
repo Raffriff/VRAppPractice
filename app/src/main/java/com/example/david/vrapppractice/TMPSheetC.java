@@ -1,5 +1,6 @@
 package com.example.david.vrapppractice;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -737,7 +738,9 @@ public class TMPSheetC extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                    //startActivity(new Intent(TMPSheetC.this, TMPPlan10.class));
+                Intent i = new Intent(TMPSheetC.this, TMPPlans.class);
+                i.putExtra("plan","10");
+                startActivity(i);
 
             }
 
@@ -748,7 +751,9 @@ public class TMPSheetC extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetC.this, TMPPlan11.class));
+                Intent i = new Intent(TMPSheetC.this, TMPPlans.class);
+                i.putExtra("plan","11");
+                startActivity(i);
 
             }
 
@@ -759,7 +764,9 @@ public class TMPSheetC extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetC.this, TMPPlan12.class));
+                Intent i = new Intent(TMPSheetC.this, TMPPlans.class);
+                i.putExtra("plan","12");
+                startActivity(i);
 
             }
 
@@ -770,7 +777,9 @@ public class TMPSheetC extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetC.this, TMPPlan13.class));
+                Intent i = new Intent(TMPSheetC.this, TMPPlans.class);
+                i.putExtra("plan","13");
+                startActivity(i);
 
             }
 
@@ -781,7 +790,9 @@ public class TMPSheetC extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetC.this, TMPPlan14.class));
+                Intent i = new Intent(TMPSheetC.this, TMPPlans.class);
+                i.putExtra("plan","14");
+                startActivity(i);
 
             }
 
@@ -792,7 +803,9 @@ public class TMPSheetC extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetC.this, TMPPlan15.class));
+                Intent i = new Intent(TMPSheetC.this, TMPPlans.class);
+                i.putExtra("plan","15");
+                startActivity(i);
 
             }
 
@@ -803,7 +816,9 @@ public class TMPSheetC extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetC.this, TMPPlan16.class));
+                Intent i = new Intent(TMPSheetC.this, TMPPlans.class);
+                i.putExtra("plan","16");
+                startActivity(i);
 
             }
 
@@ -814,7 +829,9 @@ public class TMPSheetC extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetC.this, TMPPlan17.class));
+                Intent i = new Intent(TMPSheetC.this, TMPPlans.class);
+                i.putExtra("plan","17");
+                startActivity(i);
 
             }
 
@@ -825,7 +842,9 @@ public class TMPSheetC extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetC.this, TMPPlan18.class));
+                Intent i = new Intent(TMPSheetC.this, TMPPlans_1.class);
+                i.putExtra("plan","18");
+                startActivity(i);
 
             }
 
@@ -836,7 +855,9 @@ public class TMPSheetC extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //startActivity(new Intent(TMPSheetC.this, TMPPlan19.class));
+                Intent i = new Intent(TMPSheetC.this, TMPPlans.class);
+                i.putExtra("plan","19");
+                startActivity(i);
 
             }
 

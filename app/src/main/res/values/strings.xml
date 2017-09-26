@@ -49,4 +49,7 @@
     <string name="title_activity_tmpsheet_h">TMPSheetH</string>
     <string name="title_activity_tmpsheet_j">TMPSheetJ</string>
     <string name="title_activity_tmpsheet_k">TMPSheetK</string>
+    <string name="title_activity_tmpplans">TMPPlans</string>
+    <string name="title_activity_tmpplans_1">TMPPlans_1</string>
+    <string name="title_activity_tmpplans_2">TMPPlans_2</string>
 </resources>

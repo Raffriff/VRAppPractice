@@ -1,5 +1,6 @@
 package com.example.david.vrapppractice;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -13,6 +14,8 @@ import android.widget.ScrollView;
 public class TMPSheetA extends AppCompatActivity {
 
     ////////////////////////////////////////////Variables///////////////////////////////////////
+
+    int plan;
 
     ScrollView scrollView;
 
@@ -109,7 +112,9 @@ public class TMPSheetA extends AppCompatActivity {
 
                 if (CKSheetA_2_Tickbox_Yes.isChecked()) {
 
-                    //startActivity(new Intent(TMPSheetA.this, TMPPlan7.class));
+                    Intent i = new Intent(TMPSheetA.this, TMPPlans.class);
+                    i.putExtra("plan","7");
+                    startActivity(i);
                     CKSheetA_2_Tickbox_No.setChecked(false);
 
                 } else {
@@ -170,7 +175,9 @@ public class TMPSheetA extends AppCompatActivity {
 
                 if (CKSheetA_3_Tickbox_More.isChecked()) {
 
-                    //startActivity(new Intent(TMPSheetA.this, TMPPlan7.class));
+                    Intent i = new Intent(TMPSheetA.this, TMPPlans.class);
+                    i.putExtra("plan","7");
+                    startActivity(i);
                     CKSheetA_3_Tickbox_Less.setChecked(false);
 
                 } else {
@@ -209,7 +216,9 @@ public class TMPSheetA extends AppCompatActivity {
 
                 if (CKSheetA_5_Tickbox_Minor.isChecked()) {
 
-                    //startActivity(new Intent(TMPSheetA.this, TMPPlan3.class));
+                    Intent i = new Intent(TMPSheetA.this, TMPPlans.class);
+                    i.putExtra("plan","3");
+                    startActivity(i);
                     CKSheetA_5_Tickbox_Major.setChecked(false);
 
                 } else {
@@ -248,7 +257,9 @@ public class TMPSheetA extends AppCompatActivity {
 
                 if (CKSheetA_6_Tickbox_Less.isChecked()) {
 
-                    //startActivity(new Intent(TMPSheetA.this, TMPPlan5.class));
+                    Intent i = new Intent(TMPSheetA.this, TMPPlans.class);
+                    i.putExtra("plan","5");
+                    startActivity(i);
                     CKSheetA_6_Tickbox_More.setChecked(false);
 
                 } else {
@@ -265,7 +276,9 @@ public class TMPSheetA extends AppCompatActivity {
 
                 if (CKSheetA_6_Tickbox_More.isChecked()) {
 
-                    //startActivity(new Intent(TMPSheetA.this, TMPPlan3.class));
+                    Intent i = new Intent(TMPSheetA.this, TMPPlans.class);
+                    i.putExtra("plan","3");
+                    startActivity(i);
                     CKSheetA_6_Tickbox_Less.setChecked(false);
 
                 } else {
